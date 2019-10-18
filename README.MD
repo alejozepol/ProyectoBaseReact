@@ -1,0 +1,1 @@
+Es reposito es un proyecto base con un hola mundo donde ya esta listo para webpack eslint babel con parametrizacion de buenas practicas.
