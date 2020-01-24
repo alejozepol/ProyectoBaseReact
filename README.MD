@@ -90,7 +90,7 @@ _contactame si necesitas ayuda_
 ## Expresiones de Gratitud 🎁
 
 * Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 a alguien del equipo. 
+* Invitame una cerveza 🍺. 
 * Da las gracias públicamente 🤓.
 * etc.
 
