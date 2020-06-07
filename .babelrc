@@ -2,5 +2,17 @@
     "presets": [
         "@babel/preset-env",
         "@babel/preset-react"
-    ]
+    ],
+    "plugins": [
+        "@babel/plugin-transform-runtime"
+    ],
+    "env":{
+        "development":{
+            "plugins":[
+                "transform-class-properties",
+                "babel-plugin-transform-object-assign",
+                "@babel/plugin-transform-runtime"
+            ]
+        }
+    }
 }
