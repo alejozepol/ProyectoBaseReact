@@ -16,9 +16,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alejozepol/royectoBaseReact/issues"
+    "url": "https://github.com/alejozepol/ProyectoBaseReact/issues"
   },
-  "homepage": "https://github.com/alejozepol/royectoBaseReact#readme",
+  "homepage": "https://github.com/alejozepol/ProyectoBaseReact#readme",
   "dependencies": {
     "@babel/core": "^7.11.1",
     "@babel/plugin-transform-runtime": "^7.11.0",
