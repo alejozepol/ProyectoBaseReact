@@ -29,6 +29,8 @@
         "babel-loader": "^8.2.2",
         "babel-plugin-transform-class-properties": "^6.24.1",
         "babel-plugin-transform-object-assign": "^6.22.0",
+        "enzyme": "^3.11.0",
+        "enzyme-adapter-react-16": "^1.15.6",
         "eslint": "^7.21.0",
         "eslint-config-airbnb": "^18.2.1",
         "eslint-plugin-import": "^2.22.1",
@@ -49,5 +51,14 @@
         "webpack": "^5.24.3",
         "webpack-cli": "^4.5.0",
         "webpack-dev-server": "^3.11.2"
+    },
+    "jest": {
+        "setupFilesAfterEnv": [
+            "<rootDir>/src/setupTest.js"
+        ],
+        "moduleNameMapper": {
+            "\\.(sass|css)": "<rootDir>/src/__mocks__/styleMock.js",
+            "\\.(png|jpg|svg)": "<rootDir>/src/__mocks__/styleMock.js"
+        }
     }
 }
