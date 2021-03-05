@@ -340,4 +340,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+
+# deploy
+dist
+
 # End of https://www.gitignore.io/api/react,linux,macos,windows,reactnative

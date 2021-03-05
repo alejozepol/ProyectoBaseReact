@@ -3,12 +3,14 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtraxtPlugin = require('mini-css-extract-plugin');
 
 const nodeEnv = process.env.NODE_ENV === 'development';
+console.log(nodeEnv, 'DSDSDSDS');
 
 module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
+    filename: '[name].js',
+    chunkFilename: '[id].[chunkhash].js',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -34,8 +36,8 @@ module.exports = {
         use: [{
           loader: MiniCssExtraxtPlugin.loader,
         },
-        'css-loader',
-        'sass-loader',
+          'css-loader',
+          'sass-loader',
         ],
       },
       {
@@ -54,11 +56,15 @@ module.exports = {
   plugins: [
     new HtmlWebPackPlugin({
       template: './public/index.html',
+      favicon: './public/favicon.ico',
       filename: './index.html',
     }),
     new MiniCssExtraxtPlugin({
       filename: nodeEnv ? 'assets/[name].css' : 'assets/[name].css',
     }),
   ],
+  optimization: {
+    runtimeChunk: 'multiple',
+  },
 
 };
